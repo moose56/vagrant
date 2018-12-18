@@ -1,0 +1,25 @@
+# Variables
+var_box            = 'ubuntu/xenial64'
+var_vm_name        = 'ubuntu_java'
+var_mem_size       = 4096
+var_cpus           = 2
+var_non_rotational = 'on' # SSD
+var_disk_name      = './ubuntu_java.vdi'
+var_disk_size      = 100
+
+Vagrant.configure("2") do |config|
+  config.vm.box = var_box
+  
+  config.vm.network "forwarded_port", guest: 80, host: 8080
+  config.vm.network "forwarded_port", guest: 443, host: 8443
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = var_mem_size
+    vb.cpus   = var_cpus
+    vb.name   = var_vm_name
+  end
+
+  config.vm.provision "docker"
+  config.vm.provision :shell, :path => "provisioners/setup-log.sh", :privileged => true
+  config.vm.provision :shell, :path => "provisioners/install-jdk.sh", :privileged => true
+end
