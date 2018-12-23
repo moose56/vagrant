@@ -1,0 +1,1 @@
+sh /vagrant/scripts/install_os_packages.sh

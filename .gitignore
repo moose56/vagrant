@@ -159,12 +159,5 @@ sftp-config.json
 ### Vagrant ###
 .vagrant/
 
-
-**/artifacts/*.run
-**/artifacts/*.zip
-**/artifacts/*.tar
-**/artifacts/*.lco
-**/artifacts/*.jar
-**/artifacts/*.tar.gz
-**/artifacts/*.gz
-**/log/*.txt
+**/artifacts/*
+**/log/*
