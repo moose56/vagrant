@@ -48,6 +48,10 @@ $ sqlplus system/oracle@XEPDB1
 $ @mksample oracle oracle hrpw oepw pmpw ixpw shpw bipw users temp /vagrant/artifacts/db-sample-schemas-18c/log/ localhost:1521/XEPDB1
 ```
 
+## Connection details
+
+jdbc:oracle:thin:@//localhost:1521/XEPDB1
+
 ### Useful links
 - https://www.oracle.com/database/technologies/appdev/xe/quickstart.html
 - https://yum.oracle.com/boxes
