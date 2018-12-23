@@ -33,9 +33,6 @@ $ sudo /etc/init.d/oracle-xe-18c configure
 $
 $ . oraenv
 $ ORACLE_SID = [vagrant] ? XE
-$
-$ sudo echo 'USE_SID_AS_SERVICE_listener=on' >> $ORACLE_HOME/network/admin/listener.ora
-$ sudo /opt/oracle/product/18c/dbhomeXE/bin/lsnrctl relead
 ```
 
 Install sample schemas
