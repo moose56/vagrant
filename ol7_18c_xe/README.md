@@ -12,8 +12,9 @@ Get Oracle Database XE Quick Start:
 
 ```bash
 $ cd artifacts
-$ wget https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackage/oracle-database-preinstall-18c-1.0-1.el7.x86_64.rpm
+$ # download quickstart from here https://www.oracle.com/database/technologies/appdev/xe/quickstart.html
 ```
+
 
 Get Sample Schemas:
 
